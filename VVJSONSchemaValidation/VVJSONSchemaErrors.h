@@ -21,8 +21,15 @@ extern NSString * const VVJSONSchemaErrorFailingValidatorKey;
 /** JSON schema errors user info key for an optional path to the object that caused the error in the form of JSON Pointer. */
 extern NSString * const VVJSONSchemaErrorFailingObjectPathKey;
 
+// NS_ERROR_ENUM has not been defined yet: https://twitter.com/bjhomer/status/775571745197535232
+#if __has_attribute(ns_error_domain)
+/** Defines error codes in `VVJSONSchemaErrorDomain`. */
+typedef enum VVJSONSchemaErrorCode: NSInteger VVJSONSchemaErrorCode;
+enum __attribute__((ns_error_domain(VVJSONSchemaErrorDomain))) VVJSONSchemaErrorCode: NSInteger {
+#else
 /** Defines error codes in `VVJSONSchemaErrorDomain`. */
 typedef NS_ENUM(NSUInteger, VVJSONSchemaErrorCode) {
+#endif
     /** Specified JSON Schema was created using incompatible metaschema, as denoted by its "$schema" keyword. */
     VVJSONSchemaErrorCodeIncompatibleMetaschema = 100,
     /** Specified JSON Schema is invalid. */
