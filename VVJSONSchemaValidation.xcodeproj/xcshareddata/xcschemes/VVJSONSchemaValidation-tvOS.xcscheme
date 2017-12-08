@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7D8EDAB61D3F9582005557ED"
-               BuildableName = "VVJSONSchemaValidation-tvOS.framework"
+               BuildableName = "VVJSONSchemaValidation.framework"
                BlueprintName = "VVJSONSchemaValidation-tvOS"
                ReferencedContainer = "container:VVJSONSchemaValidation.xcodeproj">
             </BuildableReference>
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -46,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D8EDAB61D3F9582005557ED"
-            BuildableName = "VVJSONSchemaValidation-tvOS.framework"
+            BuildableName = "VVJSONSchemaValidation.framework"
             BlueprintName = "VVJSONSchemaValidation-tvOS"
             ReferencedContainer = "container:VVJSONSchemaValidation.xcodeproj">
          </BuildableReference>
@@ -64,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D8EDAB61D3F9582005557ED"
-            BuildableName = "VVJSONSchemaValidation-tvOS.framework"
+            BuildableName = "VVJSONSchemaValidation.framework"
             BlueprintName = "VVJSONSchemaValidation-tvOS"
             ReferencedContainer = "container:VVJSONSchemaValidation.xcodeproj">
          </BuildableReference>
