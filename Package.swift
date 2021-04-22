@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "VVJSONSchemaValidation",
-    platforms: [.iOS(.v8), .tvOS(.v9), .watchOS(.v2), .macOS(.v10_10)],
+    platforms: [.iOS(.v9), .tvOS(.v9), .watchOS(.v2), .macOS(.v10_10)],
     products: [
         .library(
             name: "VVJSONSchemaValidation",
