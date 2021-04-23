@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /** Domain of errors generated during instantiation and validation of JSON schemas. */
-extern NSString * const VVJSONSchemaErrorDomain;
+extern NSErrorDomain const VVJSONSchemaErrorDomain;
 /** JSON schema errors user info key for an optional reference to the object that caused the error or its JSON representation. */
 extern NSString * const VVJSONSchemaErrorFailingObjectKey;
 /** JSON schema errors user info key for an optional reference to the validator that generated the error. */
@@ -22,7 +22,7 @@ extern NSString * const VVJSONSchemaErrorFailingValidatorKey;
 extern NSString * const VVJSONSchemaErrorFailingObjectPathKey;
 
 /** Defines error codes in `VVJSONSchemaErrorDomain`. */
-typedef NS_ENUM(NSInteger, VVJSONSchemaErrorCode) {
+typedef NS_ERROR_ENUM(VVJSONSchemaErrorDomain, VVJSONSchemaErrorCode) {
     /** Specified JSON Schema was created using incompatible metaschema, as denoted by its "$schema" keyword. */
     VVJSONSchemaErrorCodeIncompatibleMetaschema = 100,
     /** Specified JSON Schema is invalid. */
